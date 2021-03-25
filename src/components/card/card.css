@@ -1,0 +1,160 @@
+/* Card styling */
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+    justify-content: center;
+}
+
+.card {
+	background: #fff;
+	width: 22em;
+	border-radius: 0.6em;
+	margin: 1em;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
+	transition: all ease 200ms;
+	float: left;
+	height: 26em;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h2 {
+  color: #222;
+  margin-top: -0.2em;
+  line-height: 1.4;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  transition: all ease-in 100ms;
+}
+
+.card p {
+  color: #777;
+}
+
+.card h5 {
+  color: #bbb;
+  font-weight: 700;
+  font-size: 0.7em;
+  letter-spacing: 0.04em;
+  margin: 1.4em 0 0 0;
+  text-transform: uppercase;
+}
+
+.card-body {
+  padding: 1.2em;
+}
+
+.product-listing {
+	display: inline-block;
+  padding: 20px;
+  border: 1px solid gray;
+  margin-top: 20px;
+}
+
+.prod-title {
+	text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  float: left;
+  width: 91%;
+}
+
+.card-body p {
+  margin:0;
+  height: 37px;
+}
+
+.card-body button {
+  margin: 0;
+  float: right;
+}
+
+.price {
+  float: left;
+  font-size: larger;
+  font-weight: bold;
+  color: black;
+  font-family: system-ui;
+}
+
+.price-car {
+  display: inline-block;
+  width: 100%;  
+  margin-top: 25px;
+}
+
+.cart-item {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  padding: 8px;
+}
+
+.cart-item .product-image {
+    width: 48px;
+    height: 48px;
+}
+
+.cart-item .product-info {
+    margin-left: 16px;
+    flex-grow: 1;
+}
+
+.cart-item .product-info .product-price {
+    color: #999;
+    font-weight: 700;
+}
+
+.cart-item .product-total {
+    margin-left: 16px;
+}
+
+.cart-item .product-total .quantity {
+    color: #999;
+    font-size: 14px;
+    text-align: right;
+}
+
+.cart-item .product-total .amount {
+    color: #333;
+    font-weight: 700;
+    text-align: right;
+}
+
+.cart-items {
+    height: 320px;
+    width: 360px;
+    padding: 0;
+}
+
+.cart-cnts {
+    position: absolute;
+}
+
+.cart-cnts {
+    display: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    right: 68px;
+    margin-top: 5px;
+}
+
+.cart-cnts.active {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
